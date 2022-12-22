@@ -4,3 +4,5 @@ This is a fun game made with the `pygame` Python module in which you have to sho
 # How To Run
 
 In a terminal, run `cd Archery-Mania` to get to the project folder, then run `python3 main.py` if you have Python 3.
+
+ Enjoy and see how many points you can get! 
