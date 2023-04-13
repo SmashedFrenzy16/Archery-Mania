@@ -1,0 +1,20 @@
+name: archery-mania
+summary: An archery game made in Python by SmashedFrenzy16!
+description: |
+      This is a fun game made with the pygame Python module in which you have to shoot colorful targets to get 5 points each time you hit them. Be careful though - hitting the black ones will end the game! Enjoy and see how many points you can get! 
+version: git
+grade: stable
+confinement: devmode
+base: core22
+architectures:
+  - build-on: [arm64, armhf, amd64]
+
+apps:
+  archery-mania:
+    command: bin/archery-mania.sh
+    plugs: [home, network, network-bind, removable-media]
+
+parts:
+  archery-mania:
+    plugin: python
+    source: https://github.com/SmashedFrenzy16/Archery-Mania.git
